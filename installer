@@ -1,0 +1,15 @@
+#!/bin/bash
+#Made by Sadiq Saif <sadiq@asininetech.com>
+#Purpose: Downloads UnityOne, and copies icon to appropriate folder
+#License: Do whatever you want with this script, just keep this license intact.
+
+cd
+git clone https://github.com/JeffStory/UnityOne.git
+
+
+if  [[ "$(/usr/bin/whoami)" != "root" ]]; then
+	sudo -p "Enter your admin password: " cp $HOME/UnityOne/ubuntuoneup.png /usr/share/icons
+	sudo -k
+else
+	cp $HOME/UnityOneubuntuoneup.png /usr/share/icons
+fi
