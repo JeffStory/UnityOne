@@ -1,0 +1,11 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Version=1.0
+Type=Application
+Terminal=false
+Icon[en_US]=gksu
+Exec=gksudo cp UnityOne/ubuntuoneUP.png /usr/share/icons
+Name[en_US]=Icon Installer
+Name=Icon Installer
+Icon=/home/jeff/ubuntuUP.png
