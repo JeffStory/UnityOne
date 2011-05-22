@@ -6,6 +6,7 @@
 cd
 git clone https://github.com/JeffStory/UnityOne.git
 
+#copies the icon to the proper directory
 
 if  [[ "$(/usr/bin/whoami)" != "root" ]]; then
 	sudo -p "Enter your admin password: " cp $HOME/UnityOne/ubuntuoneUP.png /usr/share/icons
@@ -13,5 +14,12 @@ if  [[ "$(/usr/bin/whoami)" != "root" ]]; then
 else
 	cp $HOME/UnityOne/ubuntuoneUP.png /usr/share/icons
 fi
+
+#copies .desktop file to proper directory (work in progress)
+
+#cp $HOME/UnityOne/UnityOne.desktop $HOME/.local/share/applications/UnityOne.desktop
+#cd $HOME/.gconf/desktop/unity/launcher/favourites
+#mkdir app-UnityOne
+
 
 printf "\033[31m Drag the UnityOne.desktop file to your dock. \033[0m\n"
